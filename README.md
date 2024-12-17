@@ -1,14 +1,16 @@
-Here's a `README.md` file tailored for your script, explaining its purpose, usage, and contributions:
 
----
 
 # LeetCode Data Scraping Tool for Student Performance Monitoring  
 
 ## Overview  
 This Python script is designed to collect LeetCode performance data for students in a structured manner. It retrieves statistics like problem-solving counts, contest participation, and ratings using the LeetCode GraphQL API. The scraped data is compiled into an Excel sheet, making it easy for institutions to monitor and evaluate students' coding progress and engagement.
 
+## Note
+The python script is adviced to use in <b>google colab</b> which make very easier to plug and run script (ease of uploading file) since many of the faculty or user who need to monitor 
+with the the leetcode id's doesn't need to care about the installation of python modules 
+
 ## Purpose  
-Developed as a contribution to **[Your Institution Name]**, this tool helps faculty and administrators:  
+Developed as a contribution to **Sri Eshwar College Of Engineering**, this tool helps faculty and administrators:  
 1. Monitor students' coding proficiency.  
 2. Track problem-solving progress across Easy, Medium, and Hard difficulties.  
 3. Evaluate contest participation and ratings.  
@@ -49,14 +51,30 @@ The output Excel sheet includes the following columns:
 
 ---
 
+## Input Format in Excel:  
+The input Excel file should include the following columns:  
+
+| S No | Roll No | Name | Class | LeetCode ID | LeetCode Profile Link |  
+
+![Input File Format](https://drive.google.com/uc?id=1wNHtAdV3o57o64Np9yWnl0aT_wCUiURu)  
+
+---
+
+## Output Format in Excel:  
+The generated output file will include the following columns with the students' LeetCode performance data:  
+
+![Output File Format](https://drive.google.com/uc?id=1LlO39e6IjwCrMJZy7keDnfkmcIK5r8Fr)  
+
+---
+
 ## Prerequisites  
 To run the script, ensure you have the following installed:  
-1. Python 3.x  
+1. **Python 3.x**  
 2. Libraries:  
    - `requests`  
    - `openpyxl`  
    - `json`  
-3. Google Colab (if running in a notebook environment).  
+3. **Google Colab** (if running in a notebook environment).  
 
 ---
 
@@ -65,14 +83,13 @@ To run the script, ensure you have the following installed:
 ### Step 1: Prepare Input Excel File  
 The input Excel file should include student details with the following format:  
 | S No | Roll No | Name | Class | LeetCode ID | LeetCode Profile Link |  
-|------|---------|------|-------|-------------|-----------------------|  
 
 Ensure the "LeetCode ID" column contains valid usernames.
 
 ### Step 2: Run the Script  
-- Upload the prepared Excel file when prompted.  
-- The script fetches data for each student and compiles it into a new Excel file named `LeetCode_Rishi.xlsx`.  
-- Download the generated Excel file.  
+1. Upload the prepared Excel file when prompted.  
+2. The script fetches data for each student and compiles it into a new Excel file named `LeetCode_Rishi.xlsx`.  
+3. Download the generated Excel file.  
 
 ### Step 3: Analyze the Results  
 Open the output file and review the students' LeetCode performance. Missing or incorrect data is marked with "Error" or "Id Wrong."
@@ -103,12 +120,13 @@ Open the output file and review the students' LeetCode performance. Missing or i
 ---
 
 ## Contributions  
-This tool was developed by **[Your Name]** as a contribution to **[Your Institution Name]**. It is designed to help track and enhance students' coding performance effectively and efficiently.  
+This tool was developed by **Me RishiRaj** as a contribution to **my college**. It is designed to help track and enhance students' coding performance effectively and efficiently.  
 
 ---
 
 ## License  
-This tool is open for educational purposes within **[Your Institution Name]**. Any use beyond this requires appropriate credits to the contributor.
+This tool is open for educational purposes with **any institutions**. Any use beyond this requires appropriate credits to the contributor nothing but put a star to this 
+repository is my high payment:) .
 
 ---
 
@@ -118,10 +136,10 @@ This tool is open for educational purposes within **[Your Institution Name]**. A
 
 ---
 
-**Author**: [Your Name]  
-**Institution**: [Your Institution Name]  
-**Contact**: [Your Email]  
+**Author**:  Rishi Raj 
+**Institution**: Sri Eshwar College Of Engineering 
+**Contact**: rishiraj.nr2022cse@sece.ac.in  
 
---- 
+---
 
-Let me know if you need any changes or additional sections! 🚀
+Let me know if any further adjustments are needed! 🚀
